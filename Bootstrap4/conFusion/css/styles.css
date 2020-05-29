@@ -65,3 +65,7 @@ body{
     bottom: 0px;
     position: absolute;
 }
+
+.carousel-control-next, .carousel-control-prev {
+    height: 150px;
+}
