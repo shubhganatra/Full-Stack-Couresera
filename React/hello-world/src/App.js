@@ -3,13 +3,27 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './components/greet'
 import Welcome from './components/welcome'
+import Hello from './components/hello'
 
 class App extends Component {
   render() {
     return(
       <div className="App">
-        <Greet />
-        <Welcome />
+        <Greet name="Bruce" heroName='Batman'>
+          <p>This is children props</p>
+        </Greet>
+        <Greet name="Clark" heroName='Superman'>
+          <button>Go!</button>
+        </Greet>
+        <Greet name="Tony" heroName='Iron Man'/>
+        <Welcome name="Bruce" heroName='Batman'>
+          <p>This is children props</p>
+        </Welcome>
+        <Welcome name="Clark" heroName='Superman'>
+          <button>Go!</button>
+        </Welcome>
+        <Welcome name="Tony" heroName='Iron Man' />
+        <Hello/>
       </div>
     );
   }
