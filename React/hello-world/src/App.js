@@ -5,11 +5,13 @@ import Greet from './components/greet'
 import Welcome from './components/welcome'
 import Hello from './components/hello'
 import Message from './components/message'
+import Counter from './components/counter'
 
 class App extends Component {
   render() {
     return(
       <div className="App">
+        <Counter />
         {/* <Greet name="Bruce" heroName='Batman'>
           <p>This is children props</p>
         </Greet>
@@ -24,8 +26,8 @@ class App extends Component {
           <button>Go!</button>
         </Welcome>
         <Welcome name="Tony" heroName='Iron Man' />
-        <Hello/> */}
-        <Message />
+        <Hello/>
+        <Message /> */}
       </div>
     );
   }
