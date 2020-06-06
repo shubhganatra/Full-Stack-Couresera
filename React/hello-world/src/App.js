@@ -11,22 +11,22 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <Counter />
+        {/* <Counter /> */}
         {/* <Greet name="Bruce" heroName='Batman'>
           <p>This is children props</p>
         </Greet>
         <Greet name="Clark" heroName='Superman'>
           <button>Go!</button>
-        </Greet>
-        <Greet name="Tony" heroName='Iron Man'/>
-        <Welcome name="Bruce" heroName='Batman'>
+        </Greet> */}
+        {/* <Greet name="Tony" heroName='Iron Man'/> */}
+        {/* <Welcome name="Bruce" heroName='Batman'>
           <p>This is children props</p>
-        </Welcome>
-        <Welcome name="Clark" heroName='Superman'>
+        </Welcome> */}
+        {/* <Welcome name="Clark" heroName='Superman'>
           <button>Go!</button>
-        </Welcome>
+        </Welcome> */}
         <Welcome name="Tony" heroName='Iron Man' />
-        <Hello/>
+        {/* <Hello/>
         <Message /> */}
       </div>
     );
