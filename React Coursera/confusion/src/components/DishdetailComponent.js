@@ -13,10 +13,10 @@ class DishDetail extends Component
                     <p>-- {comment.author},
                     &nbsp;
                     {
-                        new Intl.DateTimeFormat('pt-BR',
+                        new Intl.DateTimeFormat('en-US',
                              {
                                     day: '2-digit',
-                                    month: 'long',
+                                    month: 'short',
                                     year: 'numeric'
 
                             }).format(new Date(comment.date))
@@ -70,10 +70,13 @@ class DishDetail extends Component
         const dishId = this.renderDish(dish);
         const dishComment = this.renderComments(dish.comments);
         return(
-            <div className='row'>
-                { dishId }
-                { dishComment }
+            <div className='container'>
+                <div className='row'>
+                    { dishId }
+                    { dishComment }
+                </div>
             </div>
+            
         );
     }
 }
